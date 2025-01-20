@@ -1,22 +1,155 @@
-ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    margin: 10px 0;
-  }
-  
-  button {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
+.select-drink-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3e6053;
+  padding: 20px;
+  max-height: 100vh;
+  margin: 0;
+}
+
+.header {
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.pagination-controls {
+  margin-top: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.arrow-button {
+  background-color: #c16757;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+}
+
+.arrow-button:disabled {
+  background-color: #c16757a1;
+  cursor: not-allowed;
+}
+
+.arrow-button:hover:not(:disabled) {
+  transform: scale(1.1);
+}
+
+.drink-cards-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.drink-card {
+  flex: 1 1 calc(30% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dfe695;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: white;
+}
+
+.drink-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.image-section img {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.info {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.info h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3e6053;
+  margin: 0;
+  display: block;
+}
+
+.info p {
+  font-size: 16px;
+  color: #3e6053;
+  margin: 5px 0;
+  display: inline-block;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.controls button {
+  background-color: #c16757;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.controls button:hover {
+  background-color: #a54e3f;
+}
+
+.controls span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3e6053;
+  text-align: center;
+  width: 30px;
+}
+
+.confirm-all-button {
+  margin-top: 20px;
+  padding: 15px 30px;
+  background-color: #c16757;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.confirm-all-button:hover {
+  background-color: #a54e3f;
+}
+
+.total-price {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}

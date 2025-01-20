@@ -1,0 +1,98 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3e6053;
+  height: 100%;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.carousel-section {
+  width: 90%;
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.content-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #3e6053;
+}
+
+.find-order {
+  flex: 1;
+  padding-right: 10px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.find-order h2 {
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.email-input {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #dfe695;
+  width: 80%;
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.find-button {
+  padding: 10px 20px;
+  background-color: #c16757;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  width: auto;
+  text-align: center;
+  display: block;
+}
+
+.error-message {
+  color: #c16757;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+  text-align: center;
+}
+
+.start-order {
+  flex: 1;
+  padding-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.order-button {
+  padding: 10px 20px;
+  background-color: #c16757;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 500px;
+  margin-top: 10px;
+}
